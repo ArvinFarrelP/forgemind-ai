@@ -109,7 +109,7 @@ export default function Settings() {
             </div>
             <div>
               <h3 className="font-medium">Fireworks AI API Key</h3>
-              <p className="text-sm text-forge-muted">Stored only in your browser&apos;s localStorage — never sent anywhere else.</p>
+              <p className="text-sm text-forge-muted">Your Fireworks AI API key is stored locally in your browser and is never stored or processed by ForgeMind AI servers.</p>
             </div>
           </div>
           <div className="relative">
