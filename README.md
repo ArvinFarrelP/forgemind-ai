@@ -1,10 +1,22 @@
 # ForgeMind AI
 
-**One Workspace. Unlimited AI Creativity.**
+<p align="center">
+  <img src="public/favicon.svg" alt="ForgeMind AI Logo" width="140">
+</p>
 
-ForgeMind AI is a premium, production-ready SaaS-style AI workspace for developers, students, creators, entrepreneurs, and professionals. It runs entirely in the browser — no backend required — and connects directly to [Fireworks AI](https://fireworks.ai) to generate high-quality content across 21 categories, from LinkedIn posts and resumes to code reviews and blog articles.
+<h1 align="center">ForgeMind AI</h1>
 
-![ForgeMind AI](public/favicon.svg)
+<p align="center">
+  <strong>One Workspace. Unlimited AI Creativity.</strong>
+</p>
+
+<p align="center">
+  A premium AI-powered workspace for software architecture, technical documentation, and developer productivity.
+</p>
+
+---
+
+ForgeMind AI is a premium, production-ready SaaS-style AI workspace for developers, students, creators, entrepreneurs, and professionals. It runs entirely in the browser—**no backend required**—and connects directly to <a href="https://fireworks.ai">Fireworks AI</a> to generate high-quality content across 21 categories, from software architecture and technical documentation to code reviews, business plans, and blog articles.
 
 ---
 
@@ -23,19 +35,19 @@ ForgeMind AI is a premium, production-ready SaaS-style AI workspace for develope
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Framework | React 19 + Vite |
-| Styling | Tailwind CSS |
-| Animation | Framer Motion |
-| Routing | React Router v6 |
-| State | Zustand |
-| Forms | React Hook Form |
-| Markdown | react-markdown + remark-gfm |
-| Syntax Highlighting | react-syntax-highlighter |
-| Icons | lucide-react |
-| AI Provider | Fireworks AI (`accounts/fireworks/models/gpt-oss-20b`) |
-| Deployment | Vercel |
+| Layer               | Technology                                             |
+| ------------------- | ------------------------------------------------------ |
+| Framework           | React 19 + Vite                                        |
+| Styling             | Tailwind CSS                                           |
+| Animation           | Framer Motion                                          |
+| Routing             | React Router v6                                        |
+| State               | Zustand                                                |
+| Forms               | React Hook Form                                        |
+| Markdown            | react-markdown + remark-gfm                            |
+| Syntax Highlighting | react-syntax-highlighter                               |
+| Icons               | lucide-react                                           |
+| AI Provider         | Fireworks AI (`accounts/fireworks/models/gpt-oss-20b`) |
+| Deployment          | Vercel                                                 |
 
 There is **no backend** — all AI calls are made directly from the browser to the Fireworks AI REST API, and all user data (accounts, history, favorites, settings) lives in `localStorage`.
 
@@ -78,8 +90,8 @@ npm run preview
 
 ## 🌐 Environment Variables
 
-| Variable | Description | Required |
-|---|---|---|
+| Variable                 | Description                                                           | Required                                      |
+| ------------------------ | --------------------------------------------------------------------- | --------------------------------------------- |
 | `VITE_FIREWORKS_API_KEY` | Your Fireworks AI API key, used to call the chat completions endpoint | Optional if you set a key in Settings instead |
 
 ## ☁️ Deployment (Vercel)
@@ -123,15 +135,31 @@ forgemind-ai/
 
 ## 📸 Screenshots
 
-> _Add screenshots of the Landing page, Workspace, and Dashboard here after deploying._
+### Landing Page
 
-- `docs/screenshot-landing.png`
-- `docs/screenshot-workspace.png`
-- `docs/screenshot-dashboard.png`
+![Landing Page](docs/screenshot-landing.png)
+
+### Workspace
+
+![Workspace](docs/screenshot-workspace.png)
+
+### Dashboard
+
+![Dashboard](docs/screenshot-dashboard.png)
+
+---
 
 ## 🔐 Data & Privacy
 
-ForgeMind AI has no backend and no analytics server. Everything — your account, generation history, favorites, and settings — is stored in your browser's `localStorage` and never leaves your device except for the direct request made to Fireworks AI when you click **Generate**.
+ForgeMind AI is designed with a privacy-first approach.
+
+- No backend server is required.
+- No user data is stored on external databases.
+- Accounts, generation history, favorites, settings, and preferences are stored locally using the browser's Local Storage.
+- AI requests are sent directly from the browser to the Fireworks AI API using the user's API key.
+- No analytics or tracking services are included.
+
+Your data remains under your control and never leaves your device except for AI inference requests made to Fireworks AI.
 
 ## 📄 License
 
